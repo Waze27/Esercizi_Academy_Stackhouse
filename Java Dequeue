@@ -1,0 +1,25 @@
+Link: https://www.hackerrank.com/challenges/java-dequeue/problem?isFullScreen=true
+
+Esercizio: 
+
+    import java.util.*;
+    public class test {
+        public static void main(String[] args) {
+            Scanner in = new Scanner(System.in);
+            Deque<Integer> deque = new ArrayDeque<>();
+            int n = in.nextInt();
+            int m = in.nextInt();
+
+            for (int i = 1; i < deque.size(); i++) { 
+                int num = in.nextInt();
+                deque.offerFirst(num);
+            if(num == deque)
+                    
+                    
+                 
+                    
+                }
+            }
+            
+        }
+    }
