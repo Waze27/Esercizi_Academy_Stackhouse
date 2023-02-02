@@ -1,0 +1,42 @@
+Link: https://www.hackerrank.com/challenges/java-covariance/problem?isFullScreen=true
+
+Esercizio:
+
+class Flower {
+    public String whatsYourName(){
+        return "I have names and types.";
+    }
+}
+
+class Jasmine extends Flower{
+    public String whatsYourName(){
+        return "Jasmine";
+    }
+}
+
+class Lily extends Flower {
+    public String whatsYourName(){
+        return "Lily";
+    }
+}
+
+class Region extends Flower {
+    public Flower yourNationalFlower(){
+        Flower fl = new Flower();
+        return fl;
+    }
+}
+
+class WestBengal extends Region {
+    public Jasmine yourNationalFlower() {
+        Jasmine js = new Jasmine();
+        return js;
+    }
+}
+
+class AndhraPradesh extends Region {
+    public Lily yourNationalFlower(){
+        Lily li = new Lily();
+        return li;
+    }
+}
