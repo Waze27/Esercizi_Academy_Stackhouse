@@ -1,0 +1,11 @@
+Link: https://www.hackerrank.com/challenges/java-factory/problem?isFullScreen=true
+
+Esercizio: 
+
+ if(order.contains("cake")){
+            Cake cake = new Cake();
+            return cake;
+        } else {
+            Pizza pizza = new Pizza();
+            return pizza;
+        }
