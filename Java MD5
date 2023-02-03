@@ -1,0 +1,31 @@
+Link: https://www.hackerrank.com/challenges/java-md5/problem?isFullScreen=true
+
+Esercizio:
+
+import java.io.*;
+import java.util.*;
+import java.math.BigInteger;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner in = new Scanner(System.in);
+        String insert = in.nextLine();
+        MessageDigest conversion = null;
+        
+        try{
+           conversion = MessageDigest.getInstance("MD5");
+        
+        } catch (NoSuchAlgorithmException e){
+            e.printStackTrace();
+        }
+        
+        in.close();
+        
+        conversion.update(insert.getBytes(), 0, insert.length());
+        System.out.println(new BigInteger(1, conversion.digest()).toString(16));
+    }
+}
